@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Aren’t Field Programmable Gate Arrays fun? They have become very popular lately with hardware hackers and makers. Why?  Falling Costs. Open Source Tooling and Hardware. Flexibility. Low Power. Timing.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Internet of Chips">
+<meta property="og:url" content="http://drox.zone/2020/02/21/Internet-of-Chips/index.html">
+<meta property="og:site_name" content="Derrick Miller">
+<meta property="og:description" content="Aren’t Field Programmable Gate Arrays fun? They have become very popular lately with hardware hackers and makers. Why?  Falling Costs. Open Source Tooling and Hardware. Flexibility. Low Power. Timing.">
+<meta property="og:locale" content="en-US">
+<meta property="og:image" content="https://i.imgur.com/iRpfVHG.png">
+<meta property="og:updated_time" content="2020-02-21T17:15:53.904Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Internet of Chips">
+<meta name="twitter:description" content="Aren’t Field Programmable Gate Arrays fun? They have become very popular lately with hardware hackers and makers. Why?  Falling Costs. Open Source Tooling and Hardware. Flexibility. Low Power. Timing.">
+<meta name="twitter:image" content="https://i.imgur.com/iRpfVHG.png">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="https://www.gravatar.com/avatar/90f75cf8999af265d550653f7cdf4d39?s=16">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="https://www.gravatar.com/avatar/90f75cf8999af265d550653f7cdf4d39?s=192" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="https://www.gravatar.com/avatar/90f75cf8999af265d550653f7cdf4d39?s=180">
+          
+        
+    
+    <!-- title -->
+    <title>Internet of Chips</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writings</a></li>
+         
+          <li><a href="https://droxpopuli.bandcamp.com">Music</a></li>
+         
+          <li><a href="https://github.com/droxpopuli">Code</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2020/02/21/hello-world/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Post Anterior</span>
+      <span id="i-next" class="info" style="display:none;">Post Següent</span>
+      <span id="i-top" class="info" style="display:none;">Adalt</span>
+      <span id="i-share" class="info" style="display:none;">Compartir Post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://drox.zone/2020/02/21/Internet-of-Chips/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://drox.zone/2020/02/21/Internet-of-Chips/&text=Internet of Chips"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://drox.zone/2020/02/21/Internet-of-Chips/&title=Internet of Chips"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://drox.zone/2020/02/21/Internet-of-Chips/&is_video=false&description=Internet of Chips"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Internet of Chips&body=Check out this article: http://drox.zone/2020/02/21/Internet-of-Chips/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://drox.zone/2020/02/21/Internet-of-Chips/&title=Internet of Chips"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://drox.zone/2020/02/21/Internet-of-Chips/&title=Internet of Chips"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://drox.zone/2020/02/21/Internet-of-Chips/&title=Internet of Chips"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://drox.zone/2020/02/21/Internet-of-Chips/&title=Internet of Chips"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://drox.zone/2020/02/21/Internet-of-Chips/&name=Internet of Chips&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Enter-icecored"><span class="toc-number">1.</span> <span class="toc-text">Enter icecored</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#What-it-is-like"><span class="toc-number">2.</span> <span class="toc-text">What it is like</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Future-Work"><span class="toc-number">3.</span> <span class="toc-text">Future Work</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Internet of Chips
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Derrick Miller</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2020-02-21T16:30:16.000Z" itemprop="datePublished">2020-02-21</time>
+        
+        (Updated: <time datetime="2020-02-21T17:15:53.904Z" itemprop="dateModified">2020-02-21</time>)
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>Aren’t Field Programmable Gate Arrays fun?</p>
+<p>They have become very popular lately with hardware hackers and makers. Why? </p>
+<p>Falling Costs. Open Source Tooling and Hardware. Flexibility. Low Power. Timing. </p>
+<p>With these features, they can fill in a role with the fuzzy tag that is “Internet of Things.”</p>
+<p>Embedded systems that need both high performance and low power often have:</p>
+<ul>
+<li>Some System-on-Chip (RPi Compute Module, x86 SMARC, etc).</li>
+<li>Micro-controllers (AVRs, STM32s, SAMs) as co-processors.</li>
+</ul>
+<p>These micro-controllers perform whatever application task but, importantly, can control power or sleep state to the SoC.</p>
+<p>So example, a weather platform can have the micro wake the SoC daily from a real-time-clock for all daily tasks.</p>
+<p>So long as the current trends continue, we will begin to start seeing more IoT projects with FPGAs as a primary co-processor.</p>
+<h2 id="Enter-icecored"><a href="#Enter-icecored" class="headerlink" title="Enter icecored"></a>Enter icecored</h2><p><img src="https://i.imgur.com/iRpfVHG.png" alt></p>
+<p>So as of now I have a USB connected FPGA on an internet connected Single Board Computer that:</p>
+<ul>
+<li>Provides a bitstream synthesis (compiling for FPGAs) service. Just curl out a zip with a name matching the top level file/module and it will store the resulting .bin in persistent storage.</li>
+<li>Provides a bitstream storage service. Build offline and upload directly if you’d like.</li>
+<li>Allows for programming the FPGA by selecting a stored bitstream.</li>
+<li>Exposes all of this in a semi-sensible API.</li>
+<li>Does it all in a Docker container.  </li>
+</ul>
+<p>For my hardware platform I used:</p>
+<ul>
+<li>The BalenaFin: A Raspberry Pi based platform that provides a few extra fun features such as a 4 pin header for USB.</li>
+<li>Tinyfpga BX: This has open source tooling (yosys), I also enjoy the very small form-factor.</li>
+</ul>
+<p>Also soldered up some headers and pins to a USB breakout board which lets me socket the tinyfpga into the 4 pin USB header.</p>
+<p>I made use of the entire Balena stack and prototyped this all out in python.</p>
+<p>Here it is: <a href="https://github.com/droxpopuli/icecored" target="_blank" rel="noopener">icecored github</a></p>
+<h2 id="What-it-is-like"><a href="#What-it-is-like" class="headerlink" title="What it is like"></a>What it is like</h2><p>Point your browser to the IP of the running box (10.0.0.183 in my local case) and the following status and usage JSON is produced:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"Banner"</span>: <span class="string">"Welcome to IceCored 0.1.0-alpha!"</span>,</span><br><span class="line">  <span class="attr">"FPGA Status"</span>: &#123;</span><br><span class="line">    <span class="attr">"boardmeta"</span>: &#123;</span><br><span class="line">      <span class="attr">"name"</span>: <span class="string">"TinyFPGA BX"</span>,</span><br><span class="line">      <span class="attr">"fpga"</span>: <span class="string">"ice40lp8k-cm81"</span>,</span><br><span class="line">      <span class="attr">"hver"</span>: <span class="string">"1.0.0"</span>,</span><br><span class="line">      <span class="attr">"uuid"</span>: <span class="string">"690ae3fe-3b71-4ee6-afd7-13de8ff09f3c"</span>,</span><br><span class="line">      <span class="attr">"activeimage"</span>: <span class="string">"Bootloader..."</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"bootmeta"</span>: &#123;</span><br><span class="line">      <span class="attr">"bootloader"</span>: <span class="string">"TinyFPGA USB Bootloader"</span>,</span><br><span class="line">      <span class="attr">"bver"</span>: <span class="string">"1.0.1"</span>,</span><br><span class="line">      <span class="attr">"update"</span>: <span class="string">"https://tinyfpga.com/update/tinyfpga-bx"</span>,</span><br><span class="line">      <span class="attr">"addrmap"</span>: &#123;</span><br><span class="line">        <span class="attr">"bootloader"</span>: <span class="string">"0x000a0-0x28000"</span>,</span><br><span class="line">        <span class="attr">"userimage"</span>: <span class="string">"0x28000-0x50000"</span>,</span><br><span class="line">        <span class="attr">"userdata"</span>: <span class="string">"0x50000-0x100000"</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"port"</span>: <span class="string">"/dev/ttyACM0"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"Bitstream List"</span>: &#123;</span><br><span class="line">    <span class="attr">"Bitstreams Found"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">"BitStream List"</span>: []</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"Build Status"</span>: &#123;</span><br><span class="line">    <span class="attr">"Build Report"</span>: <span class="string">"No Build Reports found..."</span>,</span><br><span class="line">    <span class="attr">"Build Log"</span>: <span class="string">"No Builds Performed..."</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"Usage"</span>: &#123;</span><br><span class="line">    <span class="attr">"/build"</span>: &#123;</span><br><span class="line">      <span class="attr">"GET"</span>: <span class="string">"Get the current build log output or if the build is complate, the build report."</span>,</span><br><span class="line">      <span class="attr">"PUT"</span>: &#123;</span><br><span class="line">        <span class="attr">"About"</span>: <span class="string">"Send a $NAME.zip with a $NAME.v with a top level module (named top) to build and store."</span>,</span><br><span class="line">        <span class="attr">"file"</span>: <span class="string">"An octet stream assumed to be a zip file of verilog source."</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"/bitstreams"</span>: &#123;</span><br><span class="line">      <span class="attr">"GET"</span>: <span class="string">"List out all bitstreams."</span>,</span><br><span class="line">      <span class="attr">"PUT"</span>: &#123;</span><br><span class="line">        <span class="attr">"About"</span>: <span class="string">"Upload a bitstream directly."</span>,</span><br><span class="line">        <span class="attr">"file"</span>: <span class="string">"An octet stream assumed to be a yosys/arachne-pnr/icestorm made .bin file."</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"/fpga"</span>: &#123;</span><br><span class="line">      <span class="attr">"GET"</span>: <span class="string">"Get JSON metadata of all attached FPGAs"</span>,</span><br><span class="line">      <span class="attr">"PUT"</span>: &#123;</span><br><span class="line">        <span class="attr">"About"</span>: <span class="string">"Program the FPGA with a stored bitstream."</span>,</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"The basename of the bitstream to program the FPGA with."</span></span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">"/&lt;bitstream_name&gt;"</span>: &#123;</span><br><span class="line">        <span class="attr">"GET"</span>: <span class="string">"Program the FPGA with &lt;bitstream_name&gt;"</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>The FPGA is visible and in bootloader mode.</p>
+<p>Using SpinalHDL I generated a simple LedGlow.v and got a .pcf file that maps the design’s IO to the FPGA’s pins and put them in a zip called LedGlow.zip.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">❯ curl -v -X PUT -F <span class="string">"file=@LedGlow.zip"</span> http://10.0.0.183/build</span><br></pre></td></tr></table></figure>
+
+<p>After this returns, wait a little time as synthesis is spun off in another thread.</p>
+<p>Bring up info/usage again and in addition to large printouts in Build Status, there is now:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">"Bitstream List": &#123;</span><br><span class="line">  "Bitstreams Found": 1,</span><br><span class="line">  "BitStream List": ["LedGlow"]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p>We can go to <code>http://10.0.0.183/fpga/LedGlow</code> and that bitstream is programmed onto the FPGA.</p>
+<p>Bring up info/usage again and now there is:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">"FPGA Status": &#123;</span><br><span class="line">  "boardmeta": &#123;</span><br><span class="line">    "name": "TinyFPGA BX",</span><br><span class="line">    "fpga": "ice40lp8k-cm81",</span><br><span class="line">    "hver": "1.0.0",</span><br><span class="line">    "uuid": "690ae3fe-3b71-4ee6-afd7-13de8ff09f3c",</span><br><span class="line">    "activeimage": "LedGlow"</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+<p>Other designs can remotely be put in and programmed over this. Offline synthesized bitstreams can also be directly uploaded.</p>
+<h2 id="Future-Work"><a href="#Future-Work" class="headerlink" title="Future Work"></a>Future Work</h2><p>So right out of the gate: This is not remotely production ready. Things like inputs are not remotely sanitized, and with how loosely I used Invoke, there is probably a bash injection somewhere in here. This was just a small exploration of automating remote FPGA work with this kind of platform. Doing this I have found a few areas of pain, some places to be aware of, and some possible fun applications:</p>
+<ul>
+<li>Currently, Icecored runs a USB Hub Controller to toggle USB power to reset the FPGA. Unfortunately, the mainline RPi USB Hub for versions before 4 is ganged power control which means a power reset will take out the entire USB hub on the device. This can happen on other SBCs as well. The universal fix to this would be to wire up some GPIO to the reset switch on the FPGA. This software reset wouldn’t take out the entire USB hub then. That or add an extra hub with software power support.</li>
+<li>It would be nice if the FPGA functionality didn’t have to live in a container. The functionality seems generically useful to any potential container. I would love to integrate a more robust version of this as part of a Host Operating System and have an API available to containers for this functionality. This might be able to make consideration for the former issue since it would be on the hardware specific OS level.</li>
+<li>A fun possibility I see is in things like retro game emulation. FPGAs have a bit of traction in the retro community as things like edge behaviors are re-implementated in hardware for a more accurate experience. I can envision having a centrally managed fleet of arcade machines.</li>
+</ul>
+<p>All that said, it is nice to know that this wasn’t as much of a pain as I thought it was going to be. This could turn into a nice target for other FPGA projects I do.</p>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Si us plau, activa JavaScript per poder veure el contingut.</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writings</a></li>
+         
+          <li><a href="https://droxpopuli.bandcamp.com">Music</a></li>
+         
+          <li><a href="https://github.com/droxpopuli">Code</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Enter-icecored"><span class="toc-number">1.</span> <span class="toc-text">Enter icecored</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#What-it-is-like"><span class="toc-number">2.</span> <span class="toc-text">What it is like</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Future-Work"><span class="toc-number">3.</span> <span class="toc-text">Future Work</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://drox.zone/2020/02/21/Internet-of-Chips/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://drox.zone/2020/02/21/Internet-of-Chips/&text=Internet of Chips"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://drox.zone/2020/02/21/Internet-of-Chips/&title=Internet of Chips"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://drox.zone/2020/02/21/Internet-of-Chips/&is_video=false&description=Internet of Chips"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Internet of Chips&body=Check out this article: http://drox.zone/2020/02/21/Internet-of-Chips/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://drox.zone/2020/02/21/Internet-of-Chips/&title=Internet of Chips"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://drox.zone/2020/02/21/Internet-of-Chips/&title=Internet of Chips"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://drox.zone/2020/02/21/Internet-of-Chips/&title=Internet of Chips"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://drox.zone/2020/02/21/Internet-of-Chips/&title=Internet of Chips"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://drox.zone/2020/02/21/Internet-of-Chips/&name=Internet of Chips&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menú</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Compartir</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Cap amunt</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2020 Derrick Miller
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writings</a></li>
+         
+          <li><a href="https://droxpopuli.bandcamp.com">Music</a></li>
+         
+          <li><a href="https://github.com/droxpopuli">Code</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'droxzone';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+</body>
+</html>
