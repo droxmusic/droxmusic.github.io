@@ -14,7 +14,8 @@
 <meta property="og:description" content="Aren’t Field Programmable Gate Arrays fun? They have become very popular lately with hardware hackers and makers. Why?  Falling Costs. Open Source Tooling and Hardware. Flexibility. Low Power. Timing.">
 <meta property="og:locale" content="en-US">
 <meta property="og:image" content="https://i.imgur.com/iRpfVHG.png">
-<meta property="og:updated_time" content="2020-02-21T17:15:53.904Z">
+<meta property="og:image" content="https://i.imgur.com/rl3nUhd.jpg">
+<meta property="og:updated_time" content="2020-02-21T17:43:33.756Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Internet of Chips">
 <meta name="twitter:description" content="Aren’t Field Programmable Gate Arrays fun? They have become very popular lately with hardware hackers and makers. Why?  Falling Costs. Open Source Tooling and Hardware. Flexibility. Low Power. Timing.">
@@ -83,8 +84,8 @@
         <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
       </ul>
       <span id="i-prev" class="info" style="display:none;">Post Anterior</span>
-      <span id="i-next" class="info" style="display:none;">Post Següent</span>
-      <span id="i-top" class="info" style="display:none;">Adalt</span>
+      <span id="i-next" class="info" style="display:none;">Post Siguiente</span>
+      <span id="i-top" class="info" style="display:none;">Arriba</span>
       <span id="i-share" class="info" style="display:none;">Compartir Post</span>
     </span>
     <br>
@@ -130,7 +131,7 @@
       
         <time datetime="2020-02-21T16:30:16.000Z" itemprop="datePublished">2020-02-21</time>
         
-        (Updated: <time datetime="2020-02-21T17:15:53.904Z" itemprop="dateModified">2020-02-21</time>)
+        (Updated: <time datetime="2020-02-21T17:43:33.756Z" itemprop="dateModified">2020-02-21</time>)
         
       
     </div>
@@ -174,6 +175,7 @@
 <p>Also soldered up some headers and pins to a USB breakout board which lets me socket the tinyfpga into the 4 pin USB header.</p>
 <p>I made use of the entire Balena stack and prototyped this all out in python.</p>
 <p>Here it is: <a href="https://github.com/droxpopuli/icecored" target="_blank" rel="noopener">icecored github</a></p>
+<p><img src="https://i.imgur.com/rl3nUhd.jpg" alt></p>
 <h2 id="What-it-is-like"><a href="#What-it-is-like" class="headerlink" title="What it is like"></a>What it is like</h2><p>Point your browser to the IP of the running box (10.0.0.183 in my local case) and the following status and usage JSON is produced:</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"Banner"</span>: <span class="string">"Welcome to IceCored 0.1.0-alpha!"</span>,</span><br><span class="line">  <span class="attr">"FPGA Status"</span>: &#123;</span><br><span class="line">    <span class="attr">"boardmeta"</span>: &#123;</span><br><span class="line">      <span class="attr">"name"</span>: <span class="string">"TinyFPGA BX"</span>,</span><br><span class="line">      <span class="attr">"fpga"</span>: <span class="string">"ice40lp8k-cm81"</span>,</span><br><span class="line">      <span class="attr">"hver"</span>: <span class="string">"1.0.0"</span>,</span><br><span class="line">      <span class="attr">"uuid"</span>: <span class="string">"690ae3fe-3b71-4ee6-afd7-13de8ff09f3c"</span>,</span><br><span class="line">      <span class="attr">"activeimage"</span>: <span class="string">"Bootloader..."</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"bootmeta"</span>: &#123;</span><br><span class="line">      <span class="attr">"bootloader"</span>: <span class="string">"TinyFPGA USB Bootloader"</span>,</span><br><span class="line">      <span class="attr">"bver"</span>: <span class="string">"1.0.1"</span>,</span><br><span class="line">      <span class="attr">"update"</span>: <span class="string">"https://tinyfpga.com/update/tinyfpga-bx"</span>,</span><br><span class="line">      <span class="attr">"addrmap"</span>: &#123;</span><br><span class="line">        <span class="attr">"bootloader"</span>: <span class="string">"0x000a0-0x28000"</span>,</span><br><span class="line">        <span class="attr">"userimage"</span>: <span class="string">"0x28000-0x50000"</span>,</span><br><span class="line">        <span class="attr">"userdata"</span>: <span class="string">"0x50000-0x100000"</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"port"</span>: <span class="string">"/dev/ttyACM0"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"Bitstream List"</span>: &#123;</span><br><span class="line">    <span class="attr">"Bitstreams Found"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">"BitStream List"</span>: []</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"Build Status"</span>: &#123;</span><br><span class="line">    <span class="attr">"Build Report"</span>: <span class="string">"No Build Reports found..."</span>,</span><br><span class="line">    <span class="attr">"Build Log"</span>: <span class="string">"No Builds Performed..."</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"Usage"</span>: &#123;</span><br><span class="line">    <span class="attr">"/build"</span>: &#123;</span><br><span class="line">      <span class="attr">"GET"</span>: <span class="string">"Get the current build log output or if the build is complate, the build report."</span>,</span><br><span class="line">      <span class="attr">"PUT"</span>: &#123;</span><br><span class="line">        <span class="attr">"About"</span>: <span class="string">"Send a $NAME.zip with a $NAME.v with a top level module (named top) to build and store."</span>,</span><br><span class="line">        <span class="attr">"file"</span>: <span class="string">"An octet stream assumed to be a zip file of verilog source."</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"/bitstreams"</span>: &#123;</span><br><span class="line">      <span class="attr">"GET"</span>: <span class="string">"List out all bitstreams."</span>,</span><br><span class="line">      <span class="attr">"PUT"</span>: &#123;</span><br><span class="line">        <span class="attr">"About"</span>: <span class="string">"Upload a bitstream directly."</span>,</span><br><span class="line">        <span class="attr">"file"</span>: <span class="string">"An octet stream assumed to be a yosys/arachne-pnr/icestorm made .bin file."</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"/fpga"</span>: &#123;</span><br><span class="line">      <span class="attr">"GET"</span>: <span class="string">"Get JSON metadata of all attached FPGAs"</span>,</span><br><span class="line">      <span class="attr">"PUT"</span>: &#123;</span><br><span class="line">        <span class="attr">"About"</span>: <span class="string">"Program the FPGA with a stored bitstream."</span>,</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"The basename of the bitstream to program the FPGA with."</span></span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">"/&lt;bitstream_name&gt;"</span>: &#123;</span><br><span class="line">        <span class="attr">"GET"</span>: <span class="string">"Program the FPGA with &lt;bitstream_name&gt;"</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -203,7 +205,7 @@
 
     <div class="blog-post-comments">
         <div id="disqus_thread">
-            <noscript>Si us plau, activa JavaScript per poder veure el contingut.</noscript>
+            <noscript>Por favor activa JavaScript para ver el contenido.</noscript>
         </div>
     </div>
 
@@ -250,10 +252,10 @@
     </div>
 
     <div id="actions-footer">
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menú</a>
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
         <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
         <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Compartir</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Cap amunt</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
   </div>
