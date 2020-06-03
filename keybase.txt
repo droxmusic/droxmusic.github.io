@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/droxpopuli
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://drox.zone
+  * I am droxpopuli (https://keybase.io/droxpopuli) on keybase.
+  * I have a public key ASCLdJOvQS_PCYT_8a1C9rrOtNUhr8-CnGUru8cJsuMI9go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01208b7493af412fcf0984fff1ad42f6baceb4d521afcf829c652bbbc709b2e308f60a",
+      "host": "keybase.io",
+      "kid": "01208b7493af412fcf0984fff1ad42f6baceb4d521afcf829c652bbbc709b2e308f60a",
+      "uid": "91fde964be741828a603b25d958a6f19",
+      "username": "droxpopuli"
+    },
+    "merkle_root": {
+      "ctime": 1591223417,
+      "hash": "794a08aba38fe9ece54cdda1e817fdbbb25a501d8a82f53fe71aa7a39eab4199e0e46e245a63f184a9f8f2cb37b4f88aa9efddd28d6f78dd645cb726f454099f",
+      "hash_meta": "c58f83815346aeb489160b82d308625c5edffd70a236a8abe114111abd776b84",
+      "seqno": 16516086
+    },
+    "service": {
+      "entropy": "ae1jNcLW9VuB+1YecpMvxaLu",
+      "hostname": "drox.zone",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1591223422,
+  "expire_in": 504576000,
+  "prev": "56c3ac366ce37430f87772f8861c92d600ee6d6093d000363d25398d86d93352",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgi3STr0EvzwmE//GtQva6zrTVIa/PgpxlK7vHCbLjCPYKp3BheWxvYWTESpcCB8QgVsOsNmzjdDD4d3L4hhyS1gDubWCT0AA2PSU5jYbZM1LEICChYC0rqnBQxKd8mH0FvesU1bJnVxD2ligk8kKSYQveAgHCo3NpZ8RAERHRGTEGL/420zuZTrH2MKzUoYh+CEIu9uCXrz4fBOEZYif9p1C/SqDajncYQQaXP6vwww44R4T3MwE96ItEDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGhhDYU5l5b49vzNDx0iM2E9xUiPrV/GH5YvJ5ZDyC9go3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/droxpopuli
+
+==================================================================
